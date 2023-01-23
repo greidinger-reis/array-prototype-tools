@@ -1,22 +1,24 @@
 {
-    "name": "pokemongo-backend-challenge",
+    "name": "nodejs-typescript-boilerplate",
     "version": "1.0.0",
     "description": "",
     "main": "dist/app.cjs",
+    "engines": {
+        "node": ">=19"
+    },
     "scripts": {
         "build": "tsup src",
         "start": "node dist/app.cjs",
-        "dev": "concurrently \"tsup src --watch\" \"nodemon dist/app.cjs\""
+        "dev": "concurrently \"tsup src --watch\" \"node --watch dist/app.cjs\""
     },
     "type": "module",
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@types/node": "^18.11.10",
+        "@types/node": "^18.11.18",
         "concurrently": "^7.6.0",
-        "nodemon": "^2.0.20",
         "tsup": "^6.5.0",
-        "typescript": "^4.9.3"
+        "typescript": "^4.9.4"
     }
 }

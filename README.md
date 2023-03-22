@@ -1,6 +1,6 @@
 # Array Prototype Utils
 
-### This package extends the Array and ReadonlyArray prototypes with a set of useful functions for working with arrays in JavaScript. The functions include:
+### This package extends the Array prototype with a set of useful functions for working with arrays in JavaScript. The functions include:
 
 - `sum`: Sums the values in the array
 - `avg`: Calculates the average of the values in the array

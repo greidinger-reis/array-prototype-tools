@@ -26,14 +26,19 @@ Array.prototype.isEmpty = function (this: any[]): boolean {
     return this.length === 0
 }
 
-Array.prototype.toReversed = function <T>(this: T[]): T[] {
+Array.prototype.reversed = function <T>(this: T[]): T[] {
     //eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return structuredClone(this).reverse()
 }
 
-Array.prototype.toSorted = function <T>(this: T[]): T[] {
+Array.prototype.sorted = function <T>(this: T[]): T[] {
     //eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return structuredClone(this).sort()
+}
+
+Array.prototype.shuffled = function <T>(this: T[]): T[] {
+    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return structuredClone(this).sort(() => Math.random() - 0.5)
 }
 
 Array.prototype.random = function <T>(this: T[]): T | undefined {

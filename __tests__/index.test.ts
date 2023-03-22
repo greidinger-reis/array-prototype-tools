@@ -83,15 +83,41 @@ describe("Array prototype functions", () => {
         })
     })
 
-    describe("toReversed()", () => {
+    describe("reversed()", () => {
         it("should return a new array with the elements reversed", () => {
             const array = [1, 2, 3, 4, 5]
-            expect(array.toReversed()).toEqual([5, 4, 3, 2, 1])
+            expect(array.reversed()).toEqual([5, 4, 3, 2, 1])
         })
 
         it("should not modify the original array", () => {
             const array = [1, 2, 3, 4, 5]
-            array.toReversed()
+            array.reversed()
+            expect(array).toEqual([1, 2, 3, 4, 5])
+        })
+    })
+
+    describe("sorted()", () => {
+        it("should return a new array with the elements sorted", () => {
+            const array = [5, 3, 1, 4, 2]
+            expect(array.sorted()).toEqual([1, 2, 3, 4, 5])
+        })
+
+        it("should not modify the original array", () => {
+            const array = [5, 3, 1, 4, 2]
+            array.sorted()
+            expect(array).toEqual([5, 3, 1, 4, 2])
+        })
+    })
+
+    describe("shuffled()", () => {
+        it("should return a new array with the elements shuffled", () => {
+            const array = [1, 2, 3, 4, 5]
+            expect(array.shuffled()).not.toEqual([1, 2, 3, 4, 5])
+        })
+
+        it("should not modify the original array", () => {
+            const array = [1, 2, 3, 4, 5]
+            array.shuffled()
             expect(array).toEqual([1, 2, 3, 4, 5])
         })
     })
@@ -106,19 +132,6 @@ describe("Array prototype functions", () => {
         it("should return undefined when called on an empty array", () => {
             const array: number[] = []
             expect(array.random()).toBeUndefined()
-        })
-    })
-
-    describe("toSorted()", () => {
-        it("should return a new array with the elements sorted", () => {
-            const array = [5, 3, 1, 4, 2]
-            expect(array.toSorted()).toEqual([1, 2, 3, 4, 5])
-        })
-
-        it("should not modify the original array", () => {
-            const array = [5, 3, 1, 4, 2]
-            array.toSorted()
-            expect(array).toEqual([5, 3, 1, 4, 2])
         })
     })
 })

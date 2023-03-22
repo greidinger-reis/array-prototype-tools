@@ -1,7 +1,7 @@
 {
     "name": "array-prototype-utils",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A collection of commonly created/used array functions, implemented as Array.prototype methods.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

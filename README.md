@@ -1,6 +1,6 @@
 # Array Prototype Tools
 
-## This package extends the Array and ReadonlyArray prototypes with a set of useful functions for working with arrays in JavaScript. The functions include:
+### This package extends the Array and ReadonlyArray prototypes with a set of useful functions for working with arrays in JavaScript. The functions include:
 
 - `sum`: Sums the values in the array
 - `avg`: Calculates the average of the values in the array
@@ -11,7 +11,7 @@
 - `toSorted`: Returns a new array with the elements sorted
 - `random`: Returns a random element from the array
 
-## Installation
+### Installation
 
 You can install this package using npm:
 
@@ -19,7 +19,7 @@ You can install this package using npm:
 npm install array-prototype-tools
 ```
 
-## Usage
+### Usage
 
 To use the functions provided by this package, simply import the package and use them like so:
 

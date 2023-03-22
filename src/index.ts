@@ -1,3 +1,5 @@
+import structuredClone from "@ungap/structured-clone"
+
 Array.prototype.sum = function (this: number[]): number {
     return this.reduce((acc, val) => Number(acc + val), 0)
 }

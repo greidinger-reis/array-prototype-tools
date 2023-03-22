@@ -10,6 +10,7 @@
 - `reversed`: Returns a new array with the elements in reverse order
 - `sorted`: Returns a new array with the elements sorted
 - `shuffed`: Returns a new array with the elements shuffled
+- `shuffle`: Shuffles the elements of the array in place
 - `random`: Returns a random element from the array
 
 ### Installation
@@ -55,6 +56,9 @@ console.log(arr.random()); // 1, 2, 3 or 4
 
 const shuffled = arr.shuffled();
 console.log(shuffled); // [1, 2, 3, 4] or [1, 3, 2, 4] or [2, 1, 3, 4] or [2, 3, 1, 4] or [3, 1, 2, 4] or [3, 2, 1, 4]
+
+const shuffled2 = arr.shuffle();
+console.log(shuffled2 === arr); // true
 
 ```
 

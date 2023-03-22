@@ -53,4 +53,4 @@ console.log(sorted[3] === arr[3]); // false
 console.log(arr.random()); // 1, 2, 3 or 4
 ```
 
-Note that this package modifies the Array and ReadonlyArray prototypes, so the functions are available on all arrays in your codebase after the package is imported.
+Note that this package modifies the Array prototype, so the functions are available on all arrays in your codebase after the package is imported.

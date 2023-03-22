@@ -1,4 +1,4 @@
-# Array Prototype Tools
+# Array Prototype Utils
 
 ### This package extends the Array and ReadonlyArray prototypes with a set of useful functions for working with arrays in JavaScript. The functions include:
 

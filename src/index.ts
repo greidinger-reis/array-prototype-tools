@@ -46,4 +46,9 @@ Array.prototype.random = function <T>(this: T[]): T | undefined {
     return this[Math.floor(Math.random() * this.length)]
 }
 
+Array.prototype.shuffle = function <T>(this: T[]): T[] {
+    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return this.sort(() => Math.random() - 0.5)
+}
+
 export {}

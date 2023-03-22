@@ -1,5 +1,11 @@
 # array-prototype-utils
 
+## 1.1.0
+
+### Minor Changes
+
+- adc8f19: ReadonlyArray doesn't extend Array, Added .shuffle()
+
 ## 1.0.0
 
 ### Major Changes

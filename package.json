@@ -1,8 +1,8 @@
 {
-    "name": "array-prototype-utils",
+    "name": "array-prototype-tools",
     "license": "MIT",
     "version": "0.0.1",
-    "description": "",
+    "description": "A collection of commonly created/used array functions, implemented as Array.prototype methods.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/array-prototype-utils.d.ts",
@@ -14,8 +14,17 @@
         "test": "vitest",
         "lint": "tsc"
     },
-    "keywords": [],
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/greidinger-reis/array-prototype-tools.git"
+    },
+    "keywords": [
+        "Array",
+        "prototype",
+        "tools",
+        "utils"
+    ],
+    "author": "greidinger.dev",
     "devDependencies": {
         "@changesets/cli": "^2.26.1",
         "@swc/core": "^1.3.42",
@@ -27,6 +36,7 @@
         "vitest": "^0.29.7"
     },
     "dependencies": {
-        "@ungap/structured-clone": "^1.0.2"
+        "@ungap/structured-clone": "^1.0.2",
+        "array-prototype-utils": "^0.0.1"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "array-prototype-tools",
+    "name": "array-prototype-utils",
     "license": "MIT",
     "version": "0.0.1",
     "description": "A collection of commonly created/used array functions, implemented as Array.prototype methods.",

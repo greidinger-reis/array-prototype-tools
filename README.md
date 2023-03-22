@@ -16,7 +16,7 @@
 You can install this package using npm:
 
 ```bash
-npm install array-prototype-tools
+npm install array-prototype-utils
 ```
 
 ### Usage
@@ -24,7 +24,7 @@ npm install array-prototype-tools
 To use the functions provided by this package, simply import the package and use them like so:
 
 ```js
-import 'array-prototype-tools';
+import "array-prototype-utils";
 
 const arr = [1, 2, 3, 4];
 

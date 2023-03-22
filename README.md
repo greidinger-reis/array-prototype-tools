@@ -9,7 +9,7 @@
 - `isEmpty`: Checks if the array is empty
 - `reversed`: Returns a new array with the elements in reverse order
 - `sorted`: Returns a new array with the elements sorted
-- `shuffed`: Returns a new array with the elements shuffled
+- `shuffled`: Returns a new array with the elements shuffled
 - `shuffle`: Shuffles the elements of the array in place
 - `random`: Returns a random element from the array
 

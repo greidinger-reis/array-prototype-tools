@@ -1,5 +1,11 @@
 # array-prototype-utils
 
+## 1.1.1
+
+### Patch Changes
+
+- 35c2ce2: readme for .shuffle()
+
 ## 1.1.0
 
 ### Minor Changes

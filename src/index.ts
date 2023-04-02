@@ -27,28 +27,36 @@ Array.prototype.isEmpty = function (this: any[]): boolean {
 }
 
 Array.prototype.reversed = function <T>(this: T[]): T[] {
-    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return structuredClone(this).reverse()
 }
 
 Array.prototype.sorted = function <T>(this: T[]): T[] {
-    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return structuredClone(this).sort()
 }
 
+
+
 Array.prototype.shuffled = function <T>(this: T[]): T[] {
-    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return structuredClone(this).sort(() => Math.random() - 0.5)
-}
+        const shuffledArr = structuredClone(this).sort(() => Math.random() - 0.5)
+
+        if(shuffledArr === this) {
+            return this.shuffled()
+        }
+
+        return shuffledArr
+    }
 
 Array.prototype.random = function <T>(this: T[]): T | undefined {
-    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return this[Math.floor(Math.random() * this.length)]
 }
 
 Array.prototype.shuffle = function <T>(this: T[]): T[] {
-    //eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return this.sort(() => Math.random() - 0.5)
+    const prev = structuredClone(this)
+    this.sort(() => Math.random() - 0.5)
+    if (this === prev) {
+        return this.shuffle()
+    }
+    return this
 }
 
 export {}

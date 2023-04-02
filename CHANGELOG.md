@@ -1,5 +1,11 @@
 # array-prototype-utils
 
+## 1.2.0
+
+### Minor Changes
+
+- ea2d3a0: .shuffle & .shuffled now can't return the array in same order
+
 ## 1.1.1
 
 ### Patch Changes
